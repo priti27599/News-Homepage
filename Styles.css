@@ -1,0 +1,304 @@
+/* .body {
+    margin-left: 90px;
+    margin-right: 90px;
+} */
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.list {
+    display: flex;
+
+}
+
+.list li {
+    margin-left: 30px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.list li a:hover {
+    color: orangered;
+}
+
+.main-img {
+    width: 740px;
+}
+
+.main-box {
+    display: flex;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.box {
+    border: none;
+    width: 80%;
+}
+
+.inner-box {
+    display: flex;
+}
+
+.inner-box h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+
+.para {
+    margin-left: 40px;
+    font-family: myFront;
+    margin-top: 20px;
+    color: rgb(108, 106, 106);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.btn {
+    background-color: rgb(2, 2, 39);
+    color: #fff;
+    letter-spacing: 3px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: orangered;
+}
+
+.sec-box {
+    margin-left: 40px;
+    border: 1px solid black;
+    padding: 15px;
+    width: 380px;
+    background-color: rgb(2, 2, 39);
+    color: white;
+}
+
+.sec-box h2 {
+    font-size: 40px;
+    color: rgb(255, 183, 0);
+}
+
+.con {
+    cursor: pointer;
+}
+
+.con p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgb(154, 151, 151);
+}
+
+.con h3:hover {
+    color: rgb(255, 183, 0);
+}
+
+.card-con {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 20px;
+}
+.close{
+    display: none;
+}
+
+.card {
+    display: flex;
+    border: none;
+    width: 330px;
+    height: 190px;
+    margin-right: 20px;
+}
+
+.image {
+    width: 111px;
+    height: 190px;
+    margin-right: 10px;
+}
+
+.card h1 {
+    font-size: 30px;
+    color: gray;
+}
+
+.card h2 {
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: gray;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.menu {
+    width: 45px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .head {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    /* .list {
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: #fff;
+        height: 100vh;
+        width: 60%;
+        display: none;
+        text-align: center;
+        transition: all 0.3s ease;
+    } */
+    .list {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        display: none;
+        height: 100vh;
+        width: 60%;
+    }
+
+    .change {
+        background-color: #fff;
+        width: 60%;
+        height: 100vh;
+        position: absolute;
+        top:55px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .list li a {
+        margin-top: 20px;
+        display: block;
+    }
+
+
+    .menu {
+        display: block;
+    }
+
+    .main-img {
+        width: 370px;
+    }
+
+    .main-box {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .inner-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .inner-box h1 {
+        font-size: 50px;
+    }
+
+    .inner-box .para {
+        font-family: myFront;
+        margin-top: 0;
+        color: rgb(108, 106, 106);
+        font-size: 19px;
+        line-height: 1.8;
+        letter-spacing: 1px;
+        border: none;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .sec-box {
+        margin-bottom: 30px;
+        width: 310px;
+        margin-left: 0px;
+        margin-right: 10px;
+
+    }
+
+    .sec-box h2 {
+        font-size: 40px;
+        color: rgb(255, 183, 0);
+    }
+
+    .card-con {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1000px) {
+    .main-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec-box {
+        width: 90%;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .con {
+        width: 20%;
+    }
+}
